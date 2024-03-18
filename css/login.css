@@ -1,0 +1,173 @@
+:root{
+    --blue-400: #6D9EBE;
+    --vinho-400: #27100E;
+    --gray-800: #272b33;
+    --blue-700: #001323;
+    --vinhoAguoso-300: #27100E;
+    --white: #fff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #27100E;
+    min-height: 100%;
+    min-width: 100%;
+    background-image: url(../img/poster.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%   auto;
+    
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--vinho-400);
+    padding: 10px;
+}
+.nav-btn{
+    width: 120px;
+    height: 50px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    border: solid;
+    border: 2px ;
+    border-radius: 10px;
+    color: var(--white);
+    transition: all 0.2s;
+    text-decoration: none;
+    align-items: center;
+}
+.nav-btn:hover{
+    background-color: var(--white);
+    color: var(--vinho-400);
+}
+
+.div-form{
+    border: 2px solid;
+    border-color: #27100E;
+    color: #27100E;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c5bebec8;
+    border-radius: 15px;
+    margin-bottom: 500px;
+    margin-top: 200px;
+    
+}
+.Flogin{
+    font-size: 24px;
+    padding-bottom: 15px;
+    padding-bottom: 25px; 
+    
+    
+}
+.login-inf{
+    text-align: left;
+}
+
+.btn{
+    background-color: #27100E;
+    width: 100px;
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: flex;
+    border: solid;
+    border: 2px ;
+    border-radius: 10px;
+    color: var(--white);
+    transition: all 0.2s;
+    text-decoration: none;
+    align-items: center;
+}
+.btn:hover{
+    background-color: green;
+    color: var(--white);
+}
+input{
+    background-color: #27100E;
+    width: 195px;
+    height: 45px; 
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+footer{
+    display: flex;
+    background-color: var(--vinhoAguoso-300);
+    justify-content: center;
+    padding: 28px;
+    color: var(--white);
+    margin: 0;
+
+}
+@media screen and (max-width: 900px) {
+    .navbar {
+      flex-direction: column;
+      columns: 2;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .navbar-nav {
+      flex-direction: column;
+    }
+
+  
+    .div-form {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 300px;
+      margin-bottom: 300px;
+    }
+ 
+   
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .navbar-nav {
+      flex-direction: column;
+    }
+
+  
+    .div-form {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 25%;
+      margin-bottom: 28%;
+      }
+
+    body{
+        background-position: 100%;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+       
+    }
+}

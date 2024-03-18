@@ -1,0 +1,125 @@
+:root{
+    --blue-400: #6D9EBE;
+    --vinho-400: #27100E;
+    --gray-800: #272b33;
+    --blue-700: #001323;
+    --vinhoAguoso-300: #27100E;
+    --white: #fff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    min-height: 100%;
+    min-width: 100%;
+    background-image: url(../img/wp4285925.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue-700);
+    padding: 10px;
+}
+.nav-btn{
+    width: 120px;
+    height: 50px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    border: solid;
+    border: 2px ;
+    border-radius: 10px;
+    color: var(--white);
+    transition: all 0.2s;
+    text-decoration: none;
+    align-items: center;
+}
+.nav-btn:hover{
+    background-color: var(--white);
+    color: var(--vinho-400);
+}
+
+footer{
+    display: flex;
+    background-color: var(--blue-700);
+    justify-content: center;
+    padding: 28px;
+    color: var(--white);
+
+}
+.div-form{
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    height:500px;
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c5bebeb9;
+    border-radius: 15px;
+    margin-bottom: 300px;
+    margin-top: 300px;
+    border: 2px solid;
+    border-color: #001323;
+}
+.Flogin{
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+section p{
+    font-size: 22px;
+}
+section h3{
+    font-size: 25px;
+}
+.img{
+    border: 1px solid;
+    border-color: #001323;
+    width: 60%;
+    height: 60%;
+    border-radius: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #27100E;
+    }
+    footer{
+        background-color: #27100E;
+    }
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .div-form {
+        border: 2px solid;
+        border-color: #27100E;
+        width: 350px;
+        height: 350px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img{
+        width: 50%;
+        height: 50%;
+        border-radius: 5%; 
+        border: 1px solid;
+        border-color: #27100E;
+    }
+  }
