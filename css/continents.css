@@ -6,6 +6,7 @@
     --vinhoAguoso-300: #27100E;
     --white: #fff;
 }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -20,10 +21,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: scroll;
-    
-    
+    background-attachment: scroll;
 }
+
 #pergam-img{
     width: 450px;
     height: auto;
@@ -156,5 +156,5 @@ select{
          width: 400px;
          height: auto;
          display: flex;
-    } 
+    }
       }
