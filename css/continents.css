@@ -156,9 +156,11 @@ select{
           display: flex;
           width: 300px;
           height: 300px;
+          margin-bottom: 250px;
+          margin-top: 250px;
         }
        #pergam-img{
-         width: 400px;
+         width: 370px;
          height: auto;
          display: flex;
     }
