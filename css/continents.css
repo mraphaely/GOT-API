@@ -158,3 +158,24 @@ select{
          display: flex;
     }
       }
+
+    @media screen and (max-width: 480px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+        }
+        .navbar-nav {
+          flex-direction: column;
+        }
+
+        .div-form {
+          grid-template-columns: repeat(1, 1fr);
+        }
+       #pergam-img{
+         width: 400px;
+         height: auto;
+         display: flex;
+    }
+      }
